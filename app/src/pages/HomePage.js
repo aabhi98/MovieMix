@@ -45,8 +45,8 @@ function HomePage() {
     : movies;
 
   return (
-    <div>
-      <h1>Movie Browser</h1>
+    <div class="HomePage"> 
+      <h1 class="HomePage__heading">Movie Browser</h1>
       <MovieSearch onSearch={handleSearch} />
       <MovieGrid movies={filteredMovies} onRateMovie={handleRateMovie} />
     </div>

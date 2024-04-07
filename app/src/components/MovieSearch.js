@@ -8,14 +8,14 @@ function MovieSearch({ onSearch }) {
   };
 
   return (
-    <div>
-      <input
+    <div class="HomePage__searchContainer">
+      <input class="HomePage__searchInput"
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search movies..."
       />
-      <button onClick={handleSearch}>Search</button>
+      <button class="HomePage__searchButton" onClick={handleSearch}>Search</button>
     </div>
   );
 }
